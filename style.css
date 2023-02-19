@@ -1,0 +1,61 @@
+/* Base de la página */
+
+body{
+    background-color: #0d1a26;
+    font-family: sans-serif;
+}
+
+/* FORMULARIO */
+
+fieldset{
+    background-color: #264d73;
+    max-width:300px;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color:#538cc6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario_input{
+    height: 20px;
+    width: 200px;
+    border: 2px solid #00cc00;
+    background-image: url(images/success-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+
+}
+
+.formulario_input_error{
+    font-size: 14.5px;
+    color: red;
+}
+
+
+/* VALIDAR */
+.formulario_grupo_incorrecto.formulario_input{
+    border: 2px solid red;
+}
+
+input:required:invalid{
+    border: 2px solid red;
+    background-image: url(images/error-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+/* Estilo para el boton */
+button{
+    background-color: #3333cc;
+    color: white;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+

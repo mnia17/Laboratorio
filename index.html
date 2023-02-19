@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <!--FORMULARIO -->
+        <form class="formulario" id="formulario">
+            <fieldset >
+            <h1>Create Account</h1>
+            <!--Nombre usuario -->
+            <div>
+                <label for="nombre">Nombre<br> </label>
+                    <input class="formulario_input" type="text" id="nombre" value="" pattern="[A-Za-z]{1,20}" required/> <br> 
+                <div class="formulario_input_error"></div><br>
+            </div>
+
+            <!--Email -->
+            <div>
+                <label for="email">Email<br> </label>
+                    <input  class="formulario_input" type="email" id="email" value="" required pattern="([a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[a-zA-Z0-9]){1,50}"/><br> 
+                <div class="formulario_input_error"></div><br>
+            </div>
+            
+
+            <!--Contraseña-->
+            <div>
+                <label for="clave">Clave<br> </label>
+                    <input class="formulario_input" type="password" id="clave1" name="clave1" value="" required pattern="{1,8}"/><br> 
+                <div class="formulario_input_error"></div><br>
+            </div>
+
+            <!--Validación contraseña -->
+            <div>
+                <label for="confirmacion">Confirme su clave<br> </label>
+                    <input class="formulario_input" type="password" id="clave2" name="clave2" value="" required pattern="{1,8}"/><br> 
+                <div class="formulario_input_error"></div><br>
+                <label id="msgclave" style="visibility: hidden;">Las contraseñas no coinciden</label>
+            </div>
+            
+            <button type="submit" onclick="enviarDatos()" >ENVIAR</button>
+        </fieldset>
+        </form>
+    </body>
+    
+</html>
